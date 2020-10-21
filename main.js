@@ -58,7 +58,8 @@ function increaseboneScrap(number){
 		boneScrap = boneScrap + number;	
 		document.getElementById("boneScrap").innerHTML = boneScrap
 }
-//utility functions
+//utility function
+
 function saveGame(){
 	var save = {
 		fireLevel: fireLevel,
