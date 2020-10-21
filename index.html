@@ -5,41 +5,42 @@
 	<body>
 	
 		<!-- Tab links -->
-		<div class="tab">
-		  <button class="tablinks" onclick="openCity(event, 'London')">Bonefire</button>
-		  <button class="tablinks" onclick="openCity(event, 'Paris')">2</button>
-		  <button class="tablinks" onclick="openCity(event, 'Tokyo')">3</button>
+		<div id="navtabs" class="tab">
+		  <button class="tablinks" onclick="openTab(event, 'bonefire')">Bonefire</button>
+		  <button class="tablinks" onclick="openTab(event, 'developments')">Developments</button>
+		  <button class="tablinks" onclick="openTab(event, 'settings')">Settings</button>
 		</div>
 
 		<!-- Tab content -->
-		<div id="London" class="tabcontent">
+		<div id="bonefire" class="tabcontent">
 		  <button id="fuelFireButton" onclick="fuelFire(1)">Fuel Fire</button><span id="fuelFireFeedback">.</span>
 		<br />
 		<button id="boneScrapClickButton" onclick="boneScrapClick(1)">Gather Scrap</button><span id="boneScrapFeedback">.</span>
 		<br />
+			Bone scrap: <span id="boneScrap">0</span>
+		<br />		<br />
+		Shovellers: <span id="cursors">0</span>
+		
+
 		</div>
 
-		<div id="Paris" class="tabcontent">
+		<div id="developments" class="tabcontent">
 		  <button onclick="buyCursor()">Buy Cursor</button>
 		
 		<br />
 		Shoveller Cost: <span id="cursorCost">10</span>
 		</div>
 
-		<div id="tab3" class="tabcontent">
-		  <h3>x</h3>
-		  <p>x</p>
+		<div id="settings" class="tabcontent">
+		  <h3>Settings</h3>
+		  <p>		<br/>
+		<button id="save" onclick="saveGame()">Save</button>
+		<br/>
+		<button id="load" onclick="loadGame(1)">Load</button></p>
 		</div>
 	
 		
-		Bone scrap: <span id="boneScrap">0</span>
-		<br />		<br />
-		Shovellers: <span id="cursors">0</span>
-		
-		<br/>
-		<button id="save" onclick="saveGame()">Save</button>
-		<br/>
-		<button id="load" onclick="loadGame(1)">Load</button>
+	
 	</body>
 	
 	<script type="text/javascript" src="main.js"></script>
